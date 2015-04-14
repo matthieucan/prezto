@@ -47,3 +47,6 @@ export PATH=$PATH:/home/matthieu/software/hadoop/hadoop-2.6.0/bin
 
 export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+
+unset GREP_COLOR
+export GREP_COLORS=7
