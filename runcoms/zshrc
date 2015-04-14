@@ -22,6 +22,7 @@ export LESS=R
 
 alias e='emacs -nw'
 alias g='git'
+alias gst='git st'
 alias rgrep='grep -r -n --colour'
 #export GREP_OPTIONS="-n --color"
 alias psgrep='ps aux | grep'
