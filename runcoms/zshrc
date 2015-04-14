@@ -11,3 +11,35 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
 fi
 
 # Customize to your needs...
+
+alias ll='ls -alh'
+alias la='ls -A'
+
+alias ips="sudo ifconfig | grep 'inet addr:' | cut -d: -f2 | cut -d\  -f1"
+
+export PYTHONSTARTUP="$HOME/.pyrc"
+export LESS=R
+
+alias e='emacs -nw'
+alias g='git'
+alias rgrep='grep -r -n --colour'
+#export GREP_OPTIONS="-n --color"
+alias psgrep='ps aux | grep'
+alias rgrepds='rgrep --exclude-dir=.git --exclude-dir=cache --exclude-dir=testdata --exclude=*.pyc'
+alias lynx='lynx -lss ~/.lynx.lss'
+alias diff='colordiff'
+alias docker='sudo docker'
+alias cleandocker='(sudo docker.io ps -a | tail -n +2 | awk "{print $1}" | xargs sudo docker.io rm) && (sudo docker.io images | tail -n +2 | awk "{print $3}" | xargs sudo docker.io rmi)'
+alias gitk='gitk --all'
+
+export EDITOR='emacs -nw'
+
+# mutt background fix
+COLORFGBG="default;default"
+
+export PATH=$PATH:~/bin
+
+export PATH=$PATH:/home/matthieu/software/hadoop/hadoop-2.6.0/bin
+
+export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
