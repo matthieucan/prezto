@@ -51,4 +51,7 @@ export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
 unset GREP_COLOR
 export GREP_COLORS=7
-#export TERM=gnome-256color
+
+export TERM=xterm-256color
+
+setopt no_share_history
