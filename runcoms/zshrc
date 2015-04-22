@@ -20,7 +20,7 @@ alias ips="sudo ifconfig | grep 'inet addr:' | cut -d: -f2 | cut -d\  -f1"
 export PYTHONSTARTUP="$HOME/.pyrc"
 export LESS=R
 
-alias emacs='TERM=gnome-256color emacs'
+alias emacs='TERM=xterm emacs'
 alias e='emacs -nw'
 alias g='git'
 alias gst='git st'
@@ -51,4 +51,4 @@ export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
 unset GREP_COLOR
 export GREP_COLORS=7
-export TERM=xterm-256color
+#export TERM=gnome-256color
