@@ -36,6 +36,8 @@ alias gitk='gitk --all'
 
 alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
 
+alias webserv='python -m SimpleHTTPServer 8000'
+
 alias rm='rm -I'
 alias mv='mv -f --backup=none'
 
