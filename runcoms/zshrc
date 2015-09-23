@@ -23,6 +23,7 @@ export LESS=R
 alias emacs='TERM=xterm emacs'
 alias e='emacs -nw'
 alias g='git'
+alias m='make'
 alias gst='git st'
 alias rgrep='grep -r -n --colour'
 #export GREP_OPTIONS="-n --color"
