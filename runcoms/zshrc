@@ -45,6 +45,7 @@ alias rm='rm -I'
 alias mv='mv -f --backup=none'
 
 export EDITOR='emacs -nw'
+export VISUAL='$EDITOR'
 
 # mutt background fix
 COLORFGBG="default;default"
