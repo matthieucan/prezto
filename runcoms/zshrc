@@ -42,6 +42,9 @@ alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
 alias webserv='python -m SimpleHTTPServer 8000'
 alias php-serve-here='php -S localhost:8000'
 
+# monitor disk I/O
+alias iotop='sudo iotop'
+
 alias rm='rm -I'
 alias mv='mv -f --backup=none'
 
