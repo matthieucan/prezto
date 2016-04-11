@@ -29,7 +29,7 @@ alias gst='git st'
 alias rgrep='grep -r -n --colour'
 #export GREP_OPTIONS="-n --color"
 alias psgrep='ps aux | grep'
-alias rgrepds='rgrep --exclude-dir=.git --exclude-dir=cache --exclude-dir=testdata --exclude=*.pyc'
+alias rgrepds='rgrep --exclude-dir=.git --exclude-dir=cache --exclude-dir=testdata --exclude=\*.pyc'
 alias lynx='lynx -lss ~/.lynx.lss'
 alias diff='colordiff'
 alias docker='sudo docker'
