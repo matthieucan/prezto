@@ -49,6 +49,8 @@ alias iotop='sudo iotop'
 alias rm='rm -I'
 alias mv='mv -f --backup=none'
 
+alias weather='curl --silent http://wttr.in/grenoble | head -7'
+
 export EDITOR='emacs -nw'
 export VISUAL='$EDITOR'
 
