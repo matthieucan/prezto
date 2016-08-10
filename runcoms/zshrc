@@ -65,8 +65,12 @@ export PATH=$PATH:~/bin
 
 export PATH=$PATH:/home/matthieu/software/hadoop/hadoop-2.6.0/bin
 
+export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools
+
 export JAVA_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+
+export ANDROID_HONE="/opt/android-sdk-linux"
 
 unset GREP_COLOR
 export GREP_COLORS=7
