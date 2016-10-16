@@ -107,7 +107,7 @@ if zstyle -t ':prezto:module:utility:grep' color; then
   export GREP_COLOR='37;45'           # BSD.
   export GREP_COLORS="mt=$GREP_COLOR" # GNU.
 
-  alias grep="$aliases[grep] --color=auto"
+  alias grep="grep --color=auto"
 fi
 
 # Mac OS X Everywhere
