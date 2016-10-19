@@ -18,20 +18,20 @@ setopt CORRECT
 #
 
 # Disable correction.
-alias ack='nocorrect ack'
-alias cd='nocorrect cd'
-alias cp='nocorrect cp'
-alias ebuild='nocorrect ebuild'
-alias gcc='nocorrect gcc'
-alias gist='nocorrect gist'
-alias grep='nocorrect grep'
-alias heroku='nocorrect heroku'
-alias ln='nocorrect ln'
-alias man='nocorrect man'
-alias mkdir='nocorrect mkdir'
-alias mv='nocorrect mv'
-alias mysql='nocorrect mysql'
-alias rm='nocorrect rm'
+# alias ack='nocorrect ack'
+# alias cd='nocorrect cd'
+# alias cp='nocorrect cp'
+# alias ebuild='nocorrect ebuild'
+# alias gcc='nocorrect gcc'
+# alias gist='nocorrect gist'
+# alias grep='nocorrect grep'
+# alias heroku='nocorrect heroku'
+# alias ln='nocorrect ln'
+# alias man='nocorrect man'
+# alias mkdir='nocorrect mkdir'
+# alias mv='nocorrect mv'
+# alias mysql='nocorrect mysql'
+# alias rm='nocorrect rm'
 
 # Disable globbing.
 alias bower='noglob bower'
@@ -107,7 +107,7 @@ if zstyle -t ':prezto:module:utility:grep' color; then
   export GREP_COLOR='37;45'           # BSD.
   export GREP_COLORS="mt=$GREP_COLOR" # GNU.
 
-  alias grep="$aliases[grep] --color=auto"
+  alias grep="grep --color=auto"
 fi
 
 # Mac OS X Everywhere

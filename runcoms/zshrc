@@ -78,3 +78,6 @@ export GREP_COLORS=7
 export TERM=xterm-256color
 
 setopt no_share_history
+
+# disables auto-correct
+unsetopt correct_all
