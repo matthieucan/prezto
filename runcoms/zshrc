@@ -72,7 +72,9 @@ export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-t
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
-export ANDROID_HONE="/opt/android-sdk-linux"
+export ANDROID_HOME="/opt/android-sdk-linux"
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 unset GREP_COLOR
 export GREP_COLORS=7
