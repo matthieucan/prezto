@@ -21,7 +21,6 @@ export PYTHONSTARTUP="$HOME/.pyrc"
 export LESS='-R'
 export LESSOPEN='|~/.lessfilter %s'
 
-alias emacs='TERM=xterm emacs'
 alias e='emacs -nw'
 alias g='git'
 alias m='make'
