@@ -24,6 +24,7 @@ export LESSOPEN='|~/.lessfilter %s'
 alias e='emacs -nw'
 alias g='git'
 alias m='make'
+alias f='fg'
 alias gst='git st'
 alias gitamendstudent='git commit --amend -s --date="$(date -R)"'
 alias rgrep='grep -r -n --colour'
@@ -37,6 +38,7 @@ alias cleandocker='(sudo docker.io ps -a | tail -n +2 | awk "{print $1}" | xargs
 alias gitk='gitk --all'
 alias py3='python3'
 alias clntild='find . -name \*~ -delete'
+alias irc='ssh -t vps screen -rd weechat'
 
 alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
 
@@ -69,7 +71,9 @@ export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-t
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
-export ANDROID_HONE="/opt/android-sdk-linux"
+export ANDROID_HOME="/opt/android-sdk-linux"
+export PATH=${PATH}:${ANDROID_HOME}/tools
+export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 unset GREP_COLOR
 export GREP_COLORS=7
