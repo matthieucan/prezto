@@ -18,7 +18,7 @@ alias la='ls -A'
 alias ips="sudo ifconfig | grep 'inet addr:' | cut -d: -f2 | cut -d\  -f1"
 
 export PYTHONSTARTUP="$HOME/.pyrc"
-export LESS='-R'
+export LESS='-R -c'
 export LESSOPEN='|~/.lessfilter %s'
 
 alias e='emacs -nw'
