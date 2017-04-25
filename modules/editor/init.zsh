@@ -300,8 +300,11 @@ for keymap in 'emacs' 'viins'; do
   fi
 
   # Display an indicator when completing.
-  bindkey -M "$keymap" "$key_info[Control]I" \
-    expand-or-complete-with-indicator
+  # temporary workaround was to comment the two following lines
+  # see https://github.com/sorin-ionescu/prezto/issues/1245
+  # supposedly fixed in zsh 5.3.2, wait for it
+  # bindkey -M "$keymap" "$key_info[Control]I" \
+  #   expand-or-complete-with-indicator
 
   # Insert 'sudo ' at the beginning of the line.
   bindkey -M "$keymap" "$key_info[Control]X$key_info[Control]S" prepend-sudo
