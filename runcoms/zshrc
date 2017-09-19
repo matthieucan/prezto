@@ -18,7 +18,7 @@ alias la='ls -A'
 alias ips="sudo ifconfig | grep 'inet addr:' | cut -d: -f2 | cut -d\  -f1"
 
 export PYTHONSTARTUP="$HOME/.pyrc"
-export LESS='-R'
+export LESS='-R -c'
 export LESSOPEN='|~/.lessfilter %s'
 
 alias e='emacs -nw'
@@ -44,6 +44,8 @@ alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
 
 alias webserv='python -m SimpleHTTPServer 8000'
 alias php-serve-here='php -S localhost:8000'
+
+alias osm='telnet mapscii.me'
 
 # monitor disk I/O
 alias iotop='sudo iotop'
