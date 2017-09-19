@@ -33,7 +33,8 @@ zstyle ':prezto:load' pmodule \
   'utility' \
   'completion' \
   'syntax-highlighting' \
-  'prompt'
+  'prompt' \
+  'spectrum'
 
 #
 # Editor
