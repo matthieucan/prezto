@@ -88,3 +88,7 @@ setopt no_share_history
 
 # disables auto-correct
 unsetopt correct_all
+
+# autocomplete hidden files without specifying the dot
+compinit
+_comp_options+=(globdots)
