@@ -37,7 +37,7 @@ alias docker='sudo docker'
 alias cleandocker='(sudo docker.io ps -a | tail -n +2 | awk "{print $1}" | xargs sudo docker.io rm) && (sudo docker.io images | tail -n +2 | awk "{print $3}" | xargs sudo docker.io rmi)'
 alias gitk='gitk --all'
 alias py3='python3'
-alias clntild='find . -name \*~ -delete'
+alias clntild='find . -type f -name \*~ -delete'
 alias irc='ssh -t vps screen -rd weechat'
 
 alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
@@ -78,6 +78,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 export PATH=$PATH:/opt/node-v6.11.3-linux-x64/bin
+export PATH=$PATH:/opt/geth
 
 unset GREP_COLOR
 export GREP_COLORS=7
