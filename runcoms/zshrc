@@ -68,14 +68,13 @@ export PATH=$PATH:~/bin
 
 export PATH=$PATH:/home/matthieu/software/hadoop/hadoop-2.6.0/bin
 
-export PATH=$PATH:/opt/android-sdk-linux/tools:/opt/android-sdk-linux/platform-tools
-
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
 
 export ANDROID_HOME="/opt/android-sdk-linux"
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
+export PATH=${PATH}:${ANDROID_HOME}/build-tools/23.0.1
 
 export PATH=$PATH:/opt/node-v6.11.3-linux-x64/bin
 export PATH=$PATH:/opt/geth
