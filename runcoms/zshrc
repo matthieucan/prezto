@@ -39,10 +39,11 @@ alias gitk='gitk --all'
 alias py3='python3'
 alias clntild='find . -type f -name \*~ -delete'
 alias irc='ssh -t vps screen -rd weechat'
+alias mux='tmuxinator'
 
 alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
 
-alias webserv='python -m SimpleHTTPServer 8000'
+alias webserv='python -m http.server 8000'
 alias php-serve-here='php -S localhost:8000'
 
 alias osm='telnet mapscii.me'
@@ -66,17 +67,15 @@ COLORFGBG="default;default"
 
 export PATH=$PATH:~/bin
 
-export PATH=$PATH:/home/matthieu/software/hadoop/hadoop-2.6.0/bin
-
 export JAVA_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
-export JDK_HOME="/usr/lib/jvm/java-7-openjdk-amd64"
+export JDK_HOME="/usr/lib/jvm/java-8-openjdk-amd64"
 
-export ANDROID_HOME="/opt/android-sdk-linux"
-export PATH=${PATH}:${ANDROID_HOME}/tools
+export ANDROID_HOME="/opt/android"
+export PATH=${PATH}:${ANDROID_HOME}/tools/bin
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:${ANDROID_HOME}/build-tools/23.0.1
 
-export PATH=$PATH:/opt/node-v6.11.3-linux-x64/bin
+export PATH=$PATH:/opt/node-v8.12.0-linux-x64/bin
 export PATH=$PATH:/opt/geth
 
 unset GREP_COLOR
@@ -92,3 +91,11 @@ unsetopt correct_all
 # autocomplete hidden files without specifying the dot
 compinit
 _comp_options+=(globdots)
+
+alias tpb="ssh -N -D 2001 vps & firefox -no-remote -P socks-vps 'https://thepiratebay.org' && kill '%1'"
+alias proxy-rpi="ssh -N -D 2001 pimatt & firefox -no-remote -P socks-vps 'https://duckduckgo.com' && kill '%1'"
+alias glances='glances 2>/dev/null'
+alias biggestfiles='/usr/bin/du -a . 2>/dev/null | sort -n -r | head -n 100'
+
+# fix default alias using python2
+alias http-serve='python3 -m http.server'
