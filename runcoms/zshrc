@@ -100,3 +100,6 @@ alias biggestfiles='/usr/bin/du -a . 2>/dev/null | sort -n -r | head -n 100'
 
 # fix default alias using python2
 alias http-serve='python3 -m http.server'
+
+# do me some python doc
+alias pd='pydoc3'
