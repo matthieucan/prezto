@@ -105,5 +105,4 @@ alias http-serve='python3 -m http.server'
 alias pd='pydoc3'
 
 # xfce muscle memory
-alias eog='ristretto'
 alias file-roller='xarchiver'
