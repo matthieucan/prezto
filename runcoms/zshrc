@@ -110,7 +110,7 @@ alias file-roller='xarchiver'
 # ripgrep: pipe with less when output is a terminal
 rg() {
     if [ -t 1 ]; then
-        command rg -p "$@" | less -RMFXK
+        command rg --hidden -p "$@" | less -RMF
     else
         command rg "$@"
     fi
