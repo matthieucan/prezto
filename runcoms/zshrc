@@ -106,3 +106,12 @@ alias pd='pydoc3'
 
 # xfce muscle memory
 alias file-roller='xarchiver'
+
+# ripgrep: pipe with less when output is a terminal
+rg() {
+    if [ -t 1 ]; then
+        command rg -p "$@" | less -RMFXK
+    else
+        command rg "$@"
+    fi
+}
