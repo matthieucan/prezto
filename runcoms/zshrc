@@ -21,7 +21,9 @@ export PYTHONSTARTUP="$HOME/.pyrc"
 export LESS='-R -I'
 export LESSOPEN='|~/.lessfilter %s'
 
-alias e='emacs -nw'
+alias e='COLORTERM= emacs -nw'
+# https://stackoverflow.com/questions/72803319/the-display-is-wrong-when-using-iterm2-screen-emacs-on-macos-monterey
+
 alias ee='HOME=~/spacemacs/ e'
 alias g='git'
 alias m='make'
@@ -29,33 +31,24 @@ alias f='fg'
 alias gst='git st'
 alias gitamendstudent='git commit --amend -s --date="$(date -R)"'
 alias rgrep='grep -r -n --colour'
-#export GREP_OPTIONS="-n --color"
 alias psgrep='ps aux | grep'
-alias rgrepds='rgrep --exclude-dir=.git --exclude-dir=cache --exclude-dir=testdata --exclude=\*.pyc'
-alias lynx='lynx -lss ~/.lynx.lss'
 alias diff='colordiff'
-alias docker='sudo docker'
-alias cleandocker='(sudo docker.io ps -a | tail -n +2 | awk "{print $1}" | xargs sudo docker.io rm) && (sudo docker.io images | tail -n +2 | awk "{print $3}" | xargs sudo docker.io rmi)'
 alias gitk='gitk --all'
 alias py3='python3'
 alias clntild='find . -type f -name \*~ -delete'
 alias irc='ssh -t vps screen -rd weechat'
-alias mux='tmuxinator'
-
 alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
-
-alias webserv='python -m http.server 8000'
-alias php-serve-here='php -S localhost:8000'
-
+alias mux='tmuxinator'
+alias webserv='python3 -m http.server 8000'
 alias osm='telnet mapscii.me'
 
 # monitor disk I/O
 alias iotop='sudo iotop'
 
 alias rm='rm -I'
-alias mv='mv -f --backup=none'
+#alias mv='mv -f --backup=none'
 
-alias weather='curl --silent http://wttr.in/grenoble | head -7'
+alias weather='curl --silent http://wttr.in/amsterdam'
 
 # enables sudo to expand on alias
 alias sudo='sudo '
