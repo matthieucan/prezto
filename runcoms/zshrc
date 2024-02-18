@@ -41,6 +41,7 @@ alias kirc='ps h -C "ssh vps" -o pid | xargs kill'
 alias mux='tmuxinator'
 alias webserv='python3 -m http.server 8000'
 alias osm='telnet mapscii.me'
+alias vlcgif='vlc --demux=avformat'
 
 # monitor disk I/O
 alias iotop='sudo iotop'
