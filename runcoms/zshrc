@@ -89,7 +89,6 @@ _comp_options+=(globdots)
 
 alias tpb="ssh -N -D 2001 vps & firefox -no-remote -P socks-vps 'https://thepiratebay.org' && kill '%1'"
 alias proxy-rpi="ssh -N -D 2001 pimatt & firefox -no-remote -P socks-vps 'https://duckduckgo.com' && kill '%1'"
-alias glances='glances 2>/dev/null'
 alias biggestfiles='/usr/bin/du -a . 2>/dev/null | sort -n -r | head -n 100'
 
 # fix default alias using python2
