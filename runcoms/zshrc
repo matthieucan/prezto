@@ -42,6 +42,7 @@ alias mux='tmuxinator'
 alias webserv='python3 -m http.server 8000'
 alias osm='telnet mapscii.me'
 alias vlcgif='vlc --demux=avformat'
+alias r='ranger'
 
 # monitor disk I/O
 alias iotop='sudo iotop'
