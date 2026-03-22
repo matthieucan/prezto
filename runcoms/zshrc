@@ -102,6 +102,10 @@ alias pd='pydoc3'
 # xfce muscle memory
 alias file-roller='xarchiver'
 
+# Set up fzf key bindings and fuzzy completion
+export FZF_DEFAULT_OPTS="--layout=reverse --inline-info --border --tmux"
+source <(fzf --zsh)
+
 # ripgrep: pipe with less when output is a terminal
 rg() {
     if [ -t 1 ]; then
