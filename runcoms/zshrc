@@ -111,3 +111,6 @@ rg() {
         command rg "$@"
     fi
 }
+
+# Completions for kubectl
+[[ /home/matthieu/.local/bin/kubectl ]] && source <(kubectl completion zsh)
