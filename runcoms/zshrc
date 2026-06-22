@@ -1,3 +1,6 @@
+# Uncomment to profile zsh (see also end of file)
+# zmodload zsh/zprof
+
 #
 # Executes commands at the start of an interactive session.
 #
@@ -113,3 +116,6 @@ rg() {
 
 # Completions for kubectl
 [[ /home/matthieu/.local/bin/kubectl ]] && source <(kubectl completion zsh)
+
+# Uncomment to profile zsh (see also start of file)
+# zprof
