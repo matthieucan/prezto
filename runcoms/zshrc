@@ -83,7 +83,6 @@ setopt no_share_history
 unsetopt correct_all
 
 # autocomplete hidden files without specifying the dot
-compinit
 _comp_options+=(globdots)
 
 alias tpb="ssh -N -D 2001 vps & firefox -no-remote -P socks-vps 'https://thepiratebay.org' && kill '%1'"
