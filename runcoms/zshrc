@@ -72,9 +72,6 @@ export PATH=${PATH}:${ANDROID_HOME}/tools/bin
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 export PATH=${PATH}:${ANDROID_HOME}/build-tools/28.0.3
 
-export PATH=$PATH:/opt/node-v8.12.0-linux-x64/bin
-export PATH=$PATH:/opt/geth
-
 unset GREP_COLOR
 export GREP_COLORS=7
 
