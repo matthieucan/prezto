@@ -24,8 +24,7 @@ export PYTHONSTARTUP="$HOME/.pyrc"
 export LESS='-R -I'
 export LESSOPEN='|~/.lessfilter %s'
 
-alias e='COLORTERM= emacs -nw'
-# https://stackoverflow.com/questions/72803319/the-display-is-wrong-when-using-iterm2-screen-emacs-on-macos-monterey
+alias e='emacs -nw'
 
 alias ee='HOME=~/spacemacs/ e'
 alias g='git'
