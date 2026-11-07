@@ -114,7 +114,7 @@ rg() {
 }
 
 # Completions for kubectl
-[[ /home/matthieu/.local/bin/kubectl ]] && source <(kubectl completion zsh)
+[[ -f /home/matthieu/.local/bin/kubectl ]] && source <(kubectl completion zsh)
 
 # Uncomment to profile zsh (see also start of file)
 # zprof
